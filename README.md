@@ -6,7 +6,7 @@ Also, now we're using [Harmonic](https://github.com/JSRocksHQ/harmonic), a simpl
 
 # How to use it
 First of all, you'll need to install Harmonic.  
-As Harmonic is a [Node.js](http://nodejs.org/) based project, obviously, you'll need to install it.  
+As Harmonic is a [Node.js](http://nodejs.org/) based project, obviously, you'll need to install it first if you don't have it yet.  
 ```shell
 npm install harmonic -g
 ```
