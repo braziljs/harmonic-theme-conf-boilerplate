@@ -1,5 +1,5 @@
 # What is it and why
-This Conf-Boilerplate theme is an [Harmonic](https://github.com/JSRocksHQ/harmonic)'s theme aiming to be a simple replacement for the Conf [Boileplate](https://github.com/braziljs/conf-boilerplate) project.  
+This Conf-Boilerplate theme is an [Harmonic](https://github.com/JSRocksHQ/harmonic)'s theme aiming to be a simple replacement for the [Conf Boileplate](https://github.com/braziljs/conf-boilerplate) project.  
 It is still in beta, but it's working just fine, like the old one.  
 The original Conf Boilerplate was developed using [DocPad](https://docpad.org/). DocPad is awesome, but it covers a lot of features we don't want to use.  
 Also, now we're using [Harmonic](https://github.com/JSRocksHQ/harmonic), a simple, but powerful static site generator built with the modern JavaScript.
