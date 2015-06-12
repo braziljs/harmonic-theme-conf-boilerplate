@@ -1,0 +1,34 @@
+<section class="speakers" id="speakers">
+    <h2 class="section-title">Speakers</h2>
+    <ul class="speakers-list">
+    {% for speaker in config.conf.schedule %}
+        {% if speaker.presentation %}
+            <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+                {% if speaker.photo %}
+                    <span class="speaker-photo">
+                        <img class="photo" src="{{ speaker.photo }}" alt="{{ speaker.photo }}" itemprop="image">
+                    </span>
+                {% endif %}
+
+                <h3 class="speech-title">
+                    {% if speaker.presentation.time %}
+                        <span class="speech-time">{{ speaker.presentation.time }}</span>
+                     {% endif %}
+                    <span> {{ speaker.presentation.title }} </span>
+                </h3>
+
+                <h3 class="speakers-name">
+                    {{ speaker.name }} 
+                    {% if speaker.link %}
+                        <a href="<%= speaker.link.href %>" 
+                           title="<%= speaker.link.text %>">
+                           {{ speaker.link.text }}
+                        </a>
+                    {% endif %}
+                </h3>
+                <p class="speakers-bio"> {{ speaker.bio }}</p>
+            </li>
+        {% endif %}
+    {% endfor %}
+  </ul>
+</section>

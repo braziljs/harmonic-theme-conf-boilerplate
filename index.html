@@ -1,0 +1,50 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/Event">
+<head>
+
+  <title itemprop="name">{{ config.conf.name }}</title>
+
+  <meta charset="utf-8">
+  <meta name="author" content="{{ config.conf.name }}">
+  <meta name="description" content="{{ config.conf.description }}">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <!-- FACEBOOK -->
+  <meta property="fb:app_id" content="372862979453673">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ config.conf.url }}">
+  <meta property="og:title" content="{{ config.conf.name }}">
+  <meta property="og:description" content="{{ config.conf.description }}">
+  <meta property="og:image" content="/images/badge.jpg">
+  <!-- / FACEBOOK -->
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+  <!-- STYLES -->
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <!-- / STYLES -->
+
+</head>
+<body>
+
+    <div class="global">
+
+        {% include "partials/navigation.html" %}
+        {% include "partials/header.html" %}
+
+        <div class="content" id="content">
+            <div class="wrapper">
+                {% include "partials/about.html" %}
+                {% include "partials/location.html" %}
+                {% include "partials/speakers.html" %}
+                {% include "partials/schedule.html" %}
+                {% include "partials/sponsors.html" %}
+                {% include "partials/partners.html" %}
+                {% include "partials/footer.html" %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

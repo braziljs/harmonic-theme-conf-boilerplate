@@ -1,0 +1,14 @@
+<section class="location" id="location">
+	<h2 class="section-title">Location</h2>
+
+	<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+	  <span itemprop="streetAddress">{{ config.conf.address }}. </span>
+	  <span itemprop="addressLocality">{{ config.conf.city }}</span>,
+	  <span itemprop="addressRegion"> {{ config.conf.state }}</span>
+	</p>
+
+	<div id="map-canvas" 
+		 class="location-area" 
+		 data-address="{{ config.conf.address }}, {{ config.conf.city }} - {{ config.conf.state }}">
+	</div>
+</section>

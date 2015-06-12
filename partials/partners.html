@@ -1,0 +1,18 @@
+<section class="partners" id="partners">
+    <h2 class="section-title">Partners</h2>
+    <ul class="partners-list">
+    {% for partner in config.conf.partners %}
+        <li class="partner-item" itemscope itemtype="http://schema.org/Organization">
+            <a href="{{ partner.url }}" class="partner-logo partner-link" itemprop="url">
+                <img src="{{ partner.logo }}" alt="{{ partner.name }}" class="photo" itemprop="image">
+            </a>
+        </li>      
+    {% endfor %}
+
+        <li class="partner-item">
+            <a class="partner-logo partner-link partner-call" href="#">
+                <img src="/images/your-logo.jpg" alt="your logo" class="photo">
+            </a>
+        </li>
+    </ul>
+</section>

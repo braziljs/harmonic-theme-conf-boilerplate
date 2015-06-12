@@ -1,0 +1,10 @@
+<nav id="nav">
+	<ul class="wrapper">
+		{% for section in config.conf.sections %}
+			<li class="nav-item">
+				<a href="#{{ section }}" title="{{ section }}" class="nav-link">{{ section }}	</a>
+			</li>
+		{% endfor %}
+	</ul>
+</nav>
+<hr>
