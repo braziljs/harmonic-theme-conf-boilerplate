@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/braziljs/harmonic-theme-conf-boilerplate.git"
   },
-  "author": "Jaydson Gomes",
+  "author": "Jaydson Gomes <jayalemao@gmail.com> (http://jaydson.org/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/braziljs/harmonic-theme-conf-boilerplate/issues"
